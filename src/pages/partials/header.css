@@ -1,0 +1,108 @@
+.lineup-nav{
+    padding-top: 8px !important;
+}
+
+.offcanvas-header{
+    padding: 8px 0 !important;
+    
+}
+
+.Offcanvas-background{
+    height: 100% !important;
+    width: 100% !important;
+    background: none !important;
+    transition: none !important;
+}
+
+
+
+@supports (backdrop-filter: blur(.1em)) {
+    .Navbar-Offcanvas-Blur{
+        background: rgba(255, 255, 255, 0.795);
+        backdrop-filter: blur(.5em);
+    }
+    .navbar{
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(.1em);
+    }
+}
+
+
+
+.navbars-icon{
+    border: none;
+    background: none; 
+    font-size: 2.5rem;
+    position: fixed;
+    color: #fff;
+    bottom: 40%;
+    left: 5%;
+}
+
+.navx-icon{
+    border: none;
+    background: none; 
+    font-size: 2.8rem;
+    position: fixed;
+    bottom: 40%;
+    left: 5%;
+    color: #fff;
+}
+
+.brandNavLogo{
+    width: 24.977rem;
+    height: 10.875rem;
+}
+
+.brandLogoInside{
+    display: flex;
+    justify-content: center !important;
+}
+
+.socialsOffcanvas{
+    color: #333;
+}
+
+.socialsOffcanvas:hover{
+    color: white;
+}
+
+.navOptions{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navOptions{
+    margin: 0 30%;
+}
+
+.nav-item, .nav-link, .dropdown-item{
+    color: #24292d;
+}
+
+.nav-item:hover, .nav-link:hover{
+    color: #fff;
+}
+
+.dropdown-item:hover{
+    background: none;
+    color: #fff;
+}
+
+.dropdown-menu{
+    background: none;
+    font-size: 2rem;
+    border: none;
+}
+
+
+
+@media (max-width:768px) {
+    .navOptions{
+        margin: 0;
+    }
+}
