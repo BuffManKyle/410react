@@ -3,7 +3,8 @@ import "./styles.css"
 import Videobackground from './assets/videos/videoportrait02.mp4'
 import Brandimg from './partials/images/transparent_watermark.png'
 import { Col, Button, Row, Container} from 'react-bootstrap';
-import Mycarousel from "./carousel";
+import Mycarousel from "./partials/carousel";
+import Contactform from "./partials/contactform";
 
 
 
@@ -28,7 +29,7 @@ function Home () {
                         </p>
                     </Col>
                 </Row>
-                <Button>Click for penis</Button>
+                <Button size="lg">Click for coating</Button>
             </div>
         </Container>
         
@@ -38,7 +39,7 @@ function Home () {
             <div className="text-center homeContact">
                 <Row>
                     <Col lg={{ span: 6, offset: 3 }}>
-                        <p>Words here like "fat cocks"</p>
+                        <p>Words here</p>
                     </Col>
                 </Row>
                 <Row>
@@ -46,7 +47,8 @@ function Home () {
                         <Mycarousel/>
                     </Col>
                     <Col lg={5} className="p-3">
-                    <h4>A professional mobile and static location auto detailing brand servicing the Annapolis/Kent Island, MD and surrounding areas since March 2020.</h4>
+                        <h4>A professional mobile and static location auto detailing brand servicing the Annapolis/Kent Island, MD and surrounding areas since March 2020.</h4>
+                        <Contactform/>
                     </Col>
                     
                 </Row>

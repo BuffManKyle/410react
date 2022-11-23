@@ -1,0 +1,40 @@
+
+.footerWrapper{
+    background-color: #24292d;
+    color: #fff;
+}
+
+.footerWrapper .btn{
+    margin: 1rem 0 2rem;
+}
+
+.socialCol{
+    color: #fff;
+}
+
+.socialsFooter{
+    padding: 0 1rem;   
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.socialsFooter:hover{
+    color: #333;
+}
+
+.footerInfo{
+    margin-bottom: 3vh;
+    font-weight: 100;
+}
+.footerInfo p{
+    padding: 0;
+    margin: 0;
+}
+
+.footerHR{
+    background-color: #fff;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 1rem;
+}

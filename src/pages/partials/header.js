@@ -89,13 +89,13 @@ function Header() {
                   
                   <Row className="justify-content-md-center">
                     <Col xs lg="auto">
-                      <a className="socialsOffcanvas" target="_blank" rel="noopener noreferrer" href="https://github.com/BuffManKyle"><FontAwesomeIcon icon={faInstagram} /></a>
+                      <a className="socialsOffcanvas" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/fouroneo_detailing/"><FontAwesomeIcon icon={faInstagram} /></a>
                     </Col>
                     <Col xs lg="auto">
-                      <a className="socialsOffcanvas" target="_blank" rel="noopener noreferrer" href="https://github.com/BuffManKyle"><FontAwesomeIcon icon={faFacebook} /></a>
+                      <a className="socialsOffcanvas" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/fouroneodetailing"><FontAwesomeIcon icon={faFacebook} /></a>
                     </Col>
                     <Col xs lg="auto">
-                      <a className="socialsOffcanvas" target="_blank" rel="noopener noreferrer" href="https://github.com/BuffManKyle"><FontAwesomeIcon icon={faYoutube} /></a>
+                      <a className="socialsOffcanvas" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCegEH4dBaFvcHwW0CtRdyZA?view_as=subscriber"><FontAwesomeIcon icon={faYoutube} /></a>
                     </Col>
                   </Row>
                      

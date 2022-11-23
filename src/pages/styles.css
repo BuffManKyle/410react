@@ -1,3 +1,20 @@
+/* General CSS */
+.btn{
+    background-color: #603fef;
+    border-color: #603fef;
+}
+
+.btn:hover{
+    background: none;
+    border-color: #603fef;
+    border-width: 3px;
+    transform: translateY(-2px);
+}
+
+.btn:active{
+    background-color: #603fef;
+}
+
 /*Home top content*/
 
 .videoPlayer{
