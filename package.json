@@ -12,6 +12,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
@@ -45,6 +46,5 @@
       "last 1 safari version"
     ]
   },
-        "homepage" : "https://buffmankyle.github.io/410react/"
-
+  "homepage": "https://buffmankyle.github.io/410react/"
 }
