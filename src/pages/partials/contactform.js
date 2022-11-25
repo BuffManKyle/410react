@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import './form.css';
-import { Col, Button, Row, Container } from 'react-bootstrap';
+import { Col, Container } from 'react-bootstrap';
 
 function Contactform () {
     return (

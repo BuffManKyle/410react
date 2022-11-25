@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css"
 import React, { useState } from "react";
+import {LinkContainer} from 'react-router-bootstrap'
 import { Container, Nav, Navbar, Offcanvas, Col, Row, NavDropdown} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
@@ -21,7 +22,7 @@ function Header() {
     return (
       <>
         {[false].map((expand) => (
-          <Navbar key={expand} expand={expand} className="" fixed="top">
+          <Navbar key={expand} expand={expand} className="" sticky="top">
             <Container fluid>
                 <button className="navbars-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faBars} /></button>
               <Navbar.Offcanvas
@@ -50,40 +51,64 @@ function Header() {
                 <Offcanvas.Body className="Navbar-Offcanvas-Blur">
                   <Nav className="text-center navOptions pe-3">
 
-                  <Nav.Link to="/" onClick={toggleOffCanvas}>Home</Nav.Link>
+                  <LinkContainer to="/">
+                    <Nav.Link onClick={toggleOffCanvas}>Home</Nav.Link>
+                  </LinkContainer>
 
                   <NavDropdown title="Protective Coatings" id="basic-nav-dropdown" renderMenuOnMount={true}>
                     <Container className="text-center">
-                    <NavDropdown.Item to="#action/3.1" onClick={toggleOffCanvas}>
-                      Coating Packages
-                    </NavDropdown.Item>
-                    <NavDropdown.Item to="#action/3.2" onClick={toggleOffCanvas}>
-                      Supplemental Coating Options
-                    </NavDropdown.Item>
-                    <NavDropdown.Item to="#action/3.3" onClick={toggleOffCanvas}>
-                      Coatings Explained
-                    </NavDropdown.Item>
+
+                      <LinkContainer to="/coatingpackages">
+                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                          Coating Packages
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                      <LinkContainer to="/supplementalcoatings">
+                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                          Supplemental Coating Options
+                        </NavDropdown.Item>
+                      </LinkContainer>
+                      <LinkContainer to="/what-is-a-protective-coating">
+                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                          Coatings Explained
+                        </NavDropdown.Item>
+                      </LinkContainer>
                     </Container>
                   </NavDropdown>
 
                   <NavDropdown title="Paint Correction" id="basic-nav-dropdown" renderMenuOnMount={true}>
                     <Container className="text-center">
-                    <NavDropdown.Item to="#action/3.1" onClick={toggleOffCanvas}>
-                      All-in-One Polish
-                    </NavDropdown.Item>
-                    <NavDropdown.Item to="#action/3.2" onClick={toggleOffCanvas}>
-                      One Stage Paint Correction
-                    </NavDropdown.Item>
-                    <NavDropdown.Item to="#action/3.3" onClick={toggleOffCanvas}>
-                      Multistage Paint Correction
-                    </NavDropdown.Item>
+
+                    <LinkContainer to="/aio-polish">
+                      <NavDropdown.Item  onClick={toggleOffCanvas}>
+                        All-in-One Polish
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to="/one-stage">
+                      <NavDropdown.Item  onClick={toggleOffCanvas}>
+                        One Stage Paint Correction
+                      </NavDropdown.Item>
+                    </LinkContainer>
+                    <LinkContainer to="/multistage">
+                      <NavDropdown.Item  onClick={toggleOffCanvas}>
+                        Multistage Paint Correction
+                      </NavDropdown.Item>
+                    </LinkContainer>
                     </Container>
                   </NavDropdown>
 
-                  <Nav.Link to="/" onClick={toggleOffCanvas}> Add-on Services</Nav.Link>
-                  <Nav.Link to="/" onClick={toggleOffCanvas}> Car Wash Kits</Nav.Link>
-                  <Nav.Link to="/" onClick={toggleOffCanvas}> Correction & Coatings FAQs</Nav.Link>
-                  <Nav.Link to="/" onClick={toggleOffCanvas}> About Us</Nav.Link>
+                  <LinkContainer to="/add-ons">
+                    <Nav.Link  onClick={toggleOffCanvas}> Add-on Services</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/carwarshkit">
+                    <Nav.Link  onClick={toggleOffCanvas}> Car Wash Kits</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/paint-correction-faqs">
+                    <Nav.Link  onClick={toggleOffCanvas}> Correction & Coatings FAQs</Nav.Link>
+                  </LinkContainer>
+                  <LinkContainer to="/about-us">
+                    <Nav.Link onClick={toggleOffCanvas}> About Us</Nav.Link>
+                  </LinkContainer>
 
                   <hr></hr>
                   

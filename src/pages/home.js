@@ -43,7 +43,7 @@ function Home () {
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={{ span: 6, offset: 1 }}>
+                    <Col lg={{ span: 5, offset: 1 }}>
                         <Mycarousel/>
                     </Col>
                     <Col lg={5} className="p-3">
@@ -53,6 +53,9 @@ function Home () {
                     
                 </Row>
             </div>
+            <Container className="HRwrapper">
+                <div className="HR"></div>
+            </Container>
         </Container>
     
     <div className="">

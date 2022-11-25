@@ -9,7 +9,7 @@ function Footer () {
         <>
         <div className="footerWrapper">
            <Container >
-                <div className="footerHR"></div>
+                
                  <Row className="text-center">
                     <Col lg="4">
                         <h4>Where do we service?</h4>

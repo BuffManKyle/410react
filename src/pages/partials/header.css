@@ -37,9 +37,13 @@
     background: none; 
     font-size: 2.5rem;
     position: fixed;
-    color: #fff;
+    color: #603fef;
     bottom: 40%;
     left: 5%;
+}
+
+.navbars-icon:hover{
+    color: rgba(96, 63, 239, .2);
 }
 
 .navx-icon{
@@ -49,7 +53,11 @@
     position: fixed;
     bottom: 40%;
     left: 5%;
-    color: #fff;
+    color: #603fef;
+}
+
+.navx-icon:hover{
+    color: rgba(96, 63, 239, .2);
 }
 
 .brandNavLogo{
@@ -80,7 +88,7 @@
 }
 
 .navOptions{
-    margin: 0 30%;
+    margin: 0 25%;
 }
 
 .nav-item, .nav-link, .dropdown-item{
