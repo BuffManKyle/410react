@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
 import Videobackground from './assets/videos/videoportrait02.mp4'
-import Brandimg from './partials/images/transparent_watermark.png'
+import Backgroundimg from './partials/images/car3.webp'
 import { Col, Button, Row, Container} from 'react-bootstrap';
 import Mycarousel from "./partials/carousel";
 import Contactform from "./partials/contactform";
@@ -60,7 +60,7 @@ function Home () {
     
     <div className="">
         <div className=""></div>
-            <video src={Videobackground} autoplay="autoplay" loop="true" defaultMuted className="videoPlayer" preload="auto" poster={Brandimg} playsInline>
+            <video src={Videobackground} autoplay="autoplay" loop="true" muted className="videoPlayer" preload="auto" poster={Backgroundimg} playsInline>
             </video>
         
     </div>
