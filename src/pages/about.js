@@ -1,7 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
 import { Container, Col, Row } from 'react-bootstrap';
-import Aboutimg from './assets/images/aboutimg.jpg';
 
 
 function About () {
