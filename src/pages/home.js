@@ -60,7 +60,7 @@ function Home () {
     
     <div className="">
         <div className=""></div>
-            <video src={Videobackground} autoplay="autoplay" loop="true" muted className="videoPlayer" preload="" poster={Brandimg}>
+            <video src={Videobackground} autoplay="autoplay" loop="true" defaultMuted className="videoPlayer" preload="auto" poster={Brandimg} playsInline>
             </video>
         
     </div>

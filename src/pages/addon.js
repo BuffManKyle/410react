@@ -6,7 +6,7 @@ function Addons () {
     return (
         <>
             <Container>
-
+                <h1>hellow world</h1>
             </Container>
         </>
     )
