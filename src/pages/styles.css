@@ -1,27 +1,23 @@
 /* General CSS */
-*,
-*::before,
-*::after{
-    box-sizing: border-box;
-}
+
 
 body{
     background-color: #f5f5f5;
 }
 .btn{
-    background-color: #603fef;
-    border-color: #603fef;
+    background-color: #0073CF;
+    border-color: #0073CF;
 }
 
 .btn:hover{
     background: none;
-    border-color: #603fef;
+    border-color: #0073CF;
     border-width: 3px;
     transform: translateY(-2px);
 }
 
 .btn:active{
-    background-color: #603fef;
+    background-color: #0073CF;
 }
 
 .page-header{
@@ -38,22 +34,6 @@ body{
     text-align: end;
 }
 
-.about-block{
-    background-color: #fff;
-    box-shadow: 5px 5px 5px #696969;
-    border-radius: 2%;
-    margin-bottom: 1em;
-    
-}
-
-.aboutimg{
-    box-shadow: 5px 5px 5px #696969;
-    border-radius: 2%;
-    width: 100%;
-    margin-bottom: 1em;
-    
-    
-}
 
 
 /*Home top content*/
@@ -70,8 +50,9 @@ body{
     z-index: -2;
     filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
-    filter: grayscale(60%);
-    -webkit-filter: grayscale(60%);
+    filter: grayscale(20%);
+    -webkit-filter: grayscale(20%);
+    overflow: hidden;
     
 }
 

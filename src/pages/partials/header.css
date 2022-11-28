@@ -11,7 +11,6 @@
     height: 100% !important;
     width: 100% !important;
     background: none !important;
-    transition: none !important;
 }
 
 .offcanvas-body{
@@ -37,11 +36,11 @@
     background: none; 
     font-size: 2.5rem;
     position: absolute;
-    color: #603fef;
+    color: #0073CF;
 }
 
 .navbars-icon:hover{
-    color: rgba(96, 63, 239, .2);
+    color: rgb(0,115,207,.2);
 }
 
 .navx-icon{
@@ -49,11 +48,11 @@
     background: none; 
     font-size: 2.8rem;
     position: absolute;
-    color: #603fef;
+    color: #0073CF;
 }
 
 .navx-icon:hover{
-    color: rgba(96, 63, 239, .2);
+    color: rgb(0,115,207,.2);
 }
 
 .brandNavLogo{
@@ -102,7 +101,7 @@
 
 .dropdown-menu{
     background: none;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: none;
 }
 
