@@ -18,7 +18,7 @@ function Home () {
                 <Row>
                     <Col lg={{ span: 4, offset: 4 }}>
                         <h3>
-                            Here at Four One O' Detailing, we have created a brand that is more than your average vehicle detailing company.
+                            A brand that is more than your average vehicle detailing company.
                         </h3>
                     </Col>
                 </Row>

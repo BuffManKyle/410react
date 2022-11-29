@@ -9,6 +9,7 @@ import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg
 import Brandimg from './images/transparent_watermark.png';
 
 
+
 function Header() {
 
     const [show, setShow] = useState(false);
@@ -16,6 +17,9 @@ function Header() {
     const toggleOffCanvas = () => {
     setShow((show) => !show);
     };
+
+
+    
 
 
 
@@ -77,26 +81,12 @@ function Header() {
                     </Container>
                   </NavDropdown>
 
-                  <NavDropdown title="Paint Correction" id="basic-nav-dropdown" renderMenuOnMount={true}>
-                    <Container className="text-center">
+                  
+                  
 
-                    <LinkContainer to="/aio-polish">
-                      <NavDropdown.Item  onClick={toggleOffCanvas}>
-                        All-in-One Polish
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to="/one-stage">
-                      <NavDropdown.Item  onClick={toggleOffCanvas}>
-                        One Stage Paint Correction
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                    <LinkContainer to="/multistage">
-                      <NavDropdown.Item  onClick={toggleOffCanvas}>
-                        Multistage Paint Correction
-                      </NavDropdown.Item>
-                    </LinkContainer>
-                    </Container>
-                  </NavDropdown>
+                  <LinkContainer to="/paintcorrection">
+                    <Nav.Link  onClick={toggleOffCanvas}> Paint Correction</Nav.Link>
+                  </LinkContainer>
 
                   <LinkContainer to="/add-ons">
                     <Nav.Link  onClick={toggleOffCanvas}> Add-on Services</Nav.Link>

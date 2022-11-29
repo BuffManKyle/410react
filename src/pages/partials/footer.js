@@ -13,7 +13,7 @@ function Footer () {
                  <Row className="text-center">
                     <Col lg="4">
                         <h4>Where do we service?</h4>
-                        <p>While our focus is in the Chester, MD and surrounding areas, we are able to complete services all over the DMV.</p>
+                        <p>Servicing Kent Island and surrounding areas</p>
                     </Col>
                     <Col lg="4">
                         <Button size="lg">Book Now</Button>

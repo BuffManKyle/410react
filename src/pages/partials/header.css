@@ -32,7 +32,9 @@
 
 
 .navbars-icon{
-    border: none;
+    border-color: #fff;
+    border-radius: 10%;
+    border-style: solid;
     background: none; 
     font-size: 2.5rem;
     position: absolute;
@@ -41,6 +43,7 @@
 
 .navbars-icon:hover{
     color: rgb(0,115,207,.2);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .navx-icon{
@@ -57,7 +60,7 @@
 
 .brandNavLogo{
     width: 24.977rem;
-    height: 10.875rem;
+    height: 12.875rem;
 }
 
 .brandLogoInside{
@@ -76,25 +79,24 @@
 .navOptions{
     font-size: 2rem;
     font-weight: 600;
+    margin: 0 25%;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.navOptions{
-    margin: 0 25%;
-}
+
 
 .nav-item, .nav-link, .dropdown-item{
     color: #24292d;
 }
 
-.nav-item:hover, .nav-link:hover{
-    color: #fff;
+.nav-item:hover, .nav-link:hover, .nav-link.active{
+    color: #fff !important;
 }
 
-.dropdown-item:hover{
+.dropdown-item:hover, .dropdown-item.active{
     background: none;
     color: #fff;
 }
