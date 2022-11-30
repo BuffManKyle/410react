@@ -28,7 +28,7 @@ function Header() {
 
         {[false].map((expand) => (
           <Navbar key={expand} expand={expand} className="" sticky="top">
-            <Container fluid className="p-5">
+            <Container>
                 <button className="navbars-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faBars} /></button>
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
@@ -42,7 +42,7 @@ function Header() {
               >
                 
                 <Offcanvas.Header className="Navbar-Offcanvas-Blur lineup-nav">
-                    <Container fluid className="p-5">
+                    <Container className="p-3">
                       <Row>
                         <Col>
                         <button className="navx-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faXmark} /></button>

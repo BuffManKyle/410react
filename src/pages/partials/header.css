@@ -125,9 +125,9 @@
     }
     .navbars-icon, .navbars-icon:hover{
         border: none !important;
+        margin-right: 100px;
     }
-    .offcanvas-header{
-        padding: 0 !important;
-        
-    }
+    
+
+    
 }
