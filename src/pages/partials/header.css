@@ -126,4 +126,8 @@
     .navbars-icon, .navbars-icon:hover{
         border: none !important;
     }
+    .offcanvas-header{
+        padding: 0 !important;
+        
+    }
 }

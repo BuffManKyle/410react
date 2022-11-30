@@ -6,7 +6,7 @@ import { Container, Nav, Navbar, Offcanvas, Col, Row, NavDropdown} from 'react-b
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark, faBars } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import Brandimg from './images/transparent_watermark.png';
+import Brandimg from './images/transparent_watermark_smaller.png';
 
 
 
