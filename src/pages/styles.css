@@ -33,6 +33,8 @@ body{
 }
 
 
+
+
 .align-right{
     text-align: end;
 }
@@ -74,9 +76,8 @@ body{
     color: #E1D9D1;
 }
 
-.homeContent h3{
+.homeContent h1{
     line-height: 1.5;
-    font-size: 2.5rem;
 }
 
 

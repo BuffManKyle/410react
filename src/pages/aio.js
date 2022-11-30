@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
-import "./styles/polish.css";
+import "./styles/pages.css";
 import Toyotarear from './assets/images/279061592_545617847081930_2617669926475089209_n.jpg'
 import Toyotaront from './assets/images/283462480_566477151662666_9157612857353234056_n.jpg'
 import { Container, Row, Col, Button } from 'react-bootstrap';
@@ -16,8 +16,8 @@ function Aio () {
         <>
             <div class="jumbotron ">
                 <div class="container">
-                <h1 class="display-3 oneStageTitle">All-in-One Polish</h1>
-                <div className="oneStageContent">
+                <h1 class="display-3 pagesTitle">All-in-One Polish</h1>
+                <div className="pagesTitleContent">
                 <div className="hide-on-mobile">
                         <p>          
                             {text}    
@@ -36,14 +36,14 @@ function Aio () {
                 </div>
             </div>
             <Container fluid >
-                <Row className="oneStageImgWrapper">
+                <Row className="pagesImgWrapper">
                     <Col lg={6}  >
-                        <img className="oneStageImg d-block"
+                        <img className="pagesImg d-block"
                         src={Toyotarear}
                         alt="Toyota xse rear"/>
                     </Col>
                     <Col lg={6}  >
-                        <img className="oneStageImg d-block"
+                        <img className="pagesImg d-block"
                         src={Toyotaront}
                         alt="Toyota Tundra front"/>
                     </Col>

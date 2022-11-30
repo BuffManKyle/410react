@@ -1,0 +1,105 @@
+.jumbotron{
+    background-color: #24292d;
+    padding: 4rem 2rem;
+    height: 100%;
+}
+
+.pagesTitle{
+    color: #fff;
+    font-weight: 400;
+}
+.pagesTitleAlt{
+    color: #333;
+    font-weight: 400;
+}
+
+.pagesTitleContent{
+    color: #E1D9D1;
+    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
+}
+
+.pagesTitleContentAlt{
+    color: #333;
+    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
+}
+
+.pagesImgWrapper{
+    padding: 4em;
+    background-image:linear-gradient(180deg, #f5f5f5 0%, #d2dadc 15%, #c0cbcf 40%, #a6b7bd 70%, #94a9b0 88%, #88a0a8 100%);
+    
+}
+
+.pagesImg{
+    width: 100%;
+    max-height: 85%;
+    border-radius: 5%!important;
+    box-shadow: 7px 7px 5px ;
+    margin: 1em 0;
+    object-fit: cover;
+}
+
+.showmorebtn{
+    margin-bottom: 1em;
+    background-color: #fff;
+    color: #0073CF;
+}
+
+.pageBorder{
+    background-color: #fff;
+    border-style: solid;
+    border-color: #24292d;
+    border-right-width: 2em !important;
+    border-width: 0;
+    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
+    padding: 4rem 2rem;
+}
+
+.paddingZero{
+    padding: 0;
+}
+
+.card{
+    margin: 1em;
+    padding: .2em;
+}
+.cardBackground{
+    background-image:linear-gradient(180deg, #f5f5f5 0%, #d2dadc 15%, #c0cbcf 40%, #a6b7bd 70%, #94a9b0 88%, #88a0a8 100%);
+}
+
+.bayImg{
+    width: 100%;
+}
+
+.addonBorder{
+    background-color: #fff;
+    border-style: solid;
+    border-color: #24292d;
+    border-right-width: 2em !important;
+    border-width: 0;
+    padding: 0;
+}
+
+.accordion{
+    padding: 4em;
+}
+
+.accordion p{
+    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
+}
+
+
+li{
+    list-style-type: "-";
+}
+
+@media (max-width:480px) {
+    .pageBorder, .addonBorder{
+        border: none;
+    }
+    .bayImg{
+        width: 100%;
+    }
+    .accordion{
+        padding: 1em;
+    }
+}

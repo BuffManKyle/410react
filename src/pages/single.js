@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
-import "./styles/polish.css";
+import "./styles/pages.css";
 import Mercadeshood from './assets/images/314789663_670013071295906_1018968343675313872_n.jpg'
 import Porscherear from './assets/images/Attach0.jpg'
 import { Container, Row, Col, Button } from 'react-bootstrap';
@@ -18,8 +18,8 @@ function Single () {
         
             <div class="jumbotron ">
                 <div class="container">
-                <h1 class="display-3 oneStageTitle">One Stage Paint Correction</h1>
-                <div className="oneStageContent">
+                <h1 class="display-3 pagesTitle">One Stage Paint Correction</h1>
+                <div className="pagesTitleContent">
                     <div className="hide-on-mobile">
                         <p>          
                             {text1}    
@@ -44,24 +44,19 @@ function Single () {
                 </div>
             </div>
             <Container fluid >
-                <Row className="oneStageImgWrapper">
+                <Row className="pagesImgWrapper">
                     <Col lg={6}  >
-                        <img className="oneStageImg d-block"
+                        <img className="pagesImg d-block"
                         src={Mercadeshood}
                         alt="Mercades hood"/>
                     </Col>
                     <Col lg={6}  >
-                        <img className="oneStageImg d-block"
+                        <img className="pagesImg d-block"
                         src={Porscherear}
                         alt="Mercades hood"/>
                     </Col>
                 </Row>
             </Container>
-
-            
-
-                    
-                
                 
         </>
     )

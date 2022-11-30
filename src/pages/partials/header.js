@@ -28,7 +28,7 @@ function Header() {
 
         {[false].map((expand) => (
           <Navbar key={expand} expand={expand} className="" sticky="top">
-            <Container >
+            <Container fluid className="p-5">
                 <button className="navbars-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faBars} /></button>
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
@@ -42,7 +42,7 @@ function Header() {
               >
                 
                 <Offcanvas.Header className="Navbar-Offcanvas-Blur lineup-nav">
-                    <Container>
+                    <Container fluid className="p-5">
                       <Row>
                         <Col>
                         <button className="navx-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faXmark} /></button>
@@ -60,7 +60,7 @@ function Header() {
                     <Nav.Link onClick={toggleOffCanvas}>Home</Nav.Link>
                   </LinkContainer>
 
-                  <NavDropdown title="Protective Coatings" id="basic-nav-dropdown" renderMenuOnMount={true}>
+                  <NavDropdown title="Protective Coatings" id="nav-dropdown">
                     <Container className="text-center">
 
                       <LinkContainer to="/coatingpackages">
@@ -91,7 +91,7 @@ function Header() {
                   <LinkContainer to="/add-ons">
                     <Nav.Link  onClick={toggleOffCanvas}> Add-on Services</Nav.Link>
                   </LinkContainer>
-                  <LinkContainer to="/carwarshkit">
+                  <LinkContainer to="/carwashkit">
                     <Nav.Link  onClick={toggleOffCanvas}> Car Wash Kits</Nav.Link>
                   </LinkContainer>
                   <LinkContainer to="/paint-correction-faqs">

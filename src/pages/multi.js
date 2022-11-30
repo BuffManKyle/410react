@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
-import "./styles/polish.css";
+import "./styles/pages.css";
 import Porschehood from './assets/images/278448480_541985210778527_8092779610297481546_n.jpg'
 import Kiahood from './assets/images/299232519_622498806060500_6158025831402718383_n.jpg'
 import { Container, Row, Col, Button } from 'react-bootstrap';
@@ -17,8 +17,8 @@ function Multi () {
         <>
             <div class="jumbotron ">
                 <div class="container">
-                <h1 class="display-3 oneStageTitle">Multi-Stage Paint Correction</h1>
-                <div className="oneStageContent">
+                <h1 class="display-3 pagesTitle">Multi-Stage Paint Correction</h1>
+                <div className="pagesTitleContent">
                     <div className="hide-on-mobile">
                         <p>          
                             {text1}    
@@ -43,14 +43,14 @@ function Multi () {
                 </div>
             </div>
             <Container fluid >
-                <Row className="oneStageImgWrapper">
+                <Row className="pagesImgWrapper">
                     <Col lg={6}  >
-                        <img className="oneStageImg d-block"
+                        <img className="pagesImg d-block"
                         src={Porschehood}
                         alt="Porsche hood"/>
                     </Col>
                     <Col lg={6}  >
-                        <img className="oneStageImg d-block"
+                        <img className="pagesImg d-block"
                         src={Kiahood}
                         alt="Kia Hood"/>
                     </Col>

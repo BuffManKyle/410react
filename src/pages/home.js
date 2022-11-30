@@ -17,9 +17,9 @@ function Home () {
             <div className=" text-center homeContent">
                 <Row>
                     <Col lg={{ span: 4, offset: 4 }}>
-                        <h3>
+                        <h1>
                             A brand that is more than your average vehicle detailing company.
-                        </h3>
+                        </h1>
                     </Col>
                 </Row>
                 <Row>
