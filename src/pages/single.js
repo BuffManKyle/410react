@@ -5,8 +5,11 @@ import Mercadeshood from './assets/images/314789663_670013071295906_101896834367
 import Porscherear from './assets/images/Attach0.jpg'
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import {useState} from 'react';
+import { Link } from 'react-scroll';
 
 function Single () {
+
+    const offsetValue = -170;
 
     const [showMore, setShowMore] = useState(false);
 
@@ -17,6 +20,13 @@ function Single () {
         <>
         
             <div class="jumbotron ">
+                <Row className="text-center scrollbtnWrapper">
+                    <Col>
+                        <Link to="single" spy={true} smooth={true} duration={100} offset={offsetValue}><Button className="scrollbtn" size="lg">One Stage</Button></Link>
+                        <Link to="multi" spy={true} smooth={true} duration={100} offset={offsetValue}><Button className="scrollbtn" size="lg">Multistage</Button></Link>
+                        <Link to="aio" spy={true} smooth={true} duration={100} offset={offsetValue}><Button className="scrollbtn" size="lg">All-in-one</Button></Link>
+                    </Col>  
+                </Row>
                 <div class="container">
                 <h1 class="display-3 pagesTitle">One Stage Paint Correction</h1>
                 <div className="pagesTitleContent">
