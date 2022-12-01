@@ -37,8 +37,8 @@ function Addons () {
                     </Col>
                 </Row>
 
-                <Row>
-                    <Col lg={{ span: 6, offset: 3 }} className="p-5">
+                <Row className="pageContentCentered">
+                    <Col lg={{ span: 6, offset: 3 }} className="p-5 ">
                         <h1 class="display-3 pagesTitleAlt">Undercarriage Detail</h1>
                         <div className="pagesTitleContentAlt">
                            <p>

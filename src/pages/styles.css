@@ -43,6 +43,16 @@ body{
     height: 500px;
 }
 
+.App{
+    background-image: url("./assets/images/background-resize.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    z-index: 1;
+
+
+}
+
 
 
 

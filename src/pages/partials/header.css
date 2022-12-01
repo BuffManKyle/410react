@@ -18,6 +18,7 @@
 }
 
 
+
 @supports (backdrop-filter: blur(.1em)) {
     .Navbar-Offcanvas-Blur{
         background: rgba(255, 255, 255, 0.795);
@@ -25,7 +26,7 @@
     }
     .navbar{
         background: rgba(255, 255, 255, 0);
-        backdrop-filter: blur(.1em);
+        backdrop-filter: blur(.15em);
     }
 }
 
@@ -37,7 +38,7 @@
     border-style: solid;
     background: none; 
     font-size: 2.5rem;
-    position: absolute;
+    
     color: #0073CF;
 }
 
@@ -50,7 +51,7 @@
     border: none;
     background: none; 
     font-size: 2.8rem;
-    position: absolute;
+   
     color: #0073CF;
 }
 
@@ -106,6 +107,8 @@
     font-size: 1.8rem;
     border: none;
 }
+
+
 
 
 

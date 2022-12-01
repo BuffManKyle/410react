@@ -1,13 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
 import "./styles/pages.css";
-import { Accordion, Container } from 'react-bootstrap';
+import { Accordion, Col, Container, Row } from 'react-bootstrap';
 
 function Faq () {
     return (
         <>
             <Container fluid className="cardBackground">
-            <Accordion>
+                <Row className="text-center ">
+                    <Col lg={{ span: 6, offset: 3 }} className=" p-5 pagesTitleAlt" >
+                        <h1 className="display-3">Frequently Asked Questions</h1>
+                    </Col>
+                    
+                </Row>
+            <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header><h1 class="display-5">What is a paint correction?</h1></Accordion.Header>
                     <Accordion.Body>

@@ -1,4 +1,5 @@
 import './App.css';
+import "./pages/styles.css"
 import { Route, Routes } from 'react-router-dom'
 import Header from './pages/partials/header';
 import Footer from './pages/partials/footer';
@@ -15,27 +16,28 @@ import Options from './pages/suplemental';
 import Packages from './pages/packages';
 import Single from './pages/single'
 import Paintcorrectionpage from './pages/paint-correction-group';
+import Soapbackground from './pages/assets/images/281455940_561511535492561_7192036834128795424_n.jpg'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/add-ons' element={<Addon/>} />
-        <Route path='/about-us' element={<About/>} />
-        <Route path='/aio-polish' element={<Aio/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/what-is-a-protective-coating' element={<Explain/>} />
-        <Route path='/paint-correction-faqs' element={<Faq/>} />
-        <Route path='/carwashkit' element={<Kits/>} />
-        <Route path='/multistage' element={<Multi/>} />
-        <Route path='/supplementalcoatings' element={<Options/>} />
-        <Route path='/coatingpackages' element={<Packages/>} />
-        <Route path='/one-stage' element={<Single/>} />
-        <Route path='/paintcorrection' element= {<Paintcorrectionpage/>} />
-      </Routes>
-      <Footer />
+    <div  className="App">
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/add-ons' element={<Addon/>} />
+          <Route path='/about-us' element={<About/>} />
+          <Route path='/aio-polish' element={<Aio/>} />
+          <Route path='/contact' element={<Contact/>} />
+          <Route path='/what-is-a-protective-coating' element={<Explain/>} />
+          <Route path='/paint-correction-faqs' element={<Faq/>} />
+          <Route path='/carwashkit' element={<Kits/>} />
+          <Route path='/multistage' element={<Multi/>} />
+          <Route path='/supplementalcoatings' element={<Options/>} />
+          <Route path='/coatingpackages' element={<Packages/>} />
+          <Route path='/one-stage' element={<Single/>} />
+          <Route path='/paintcorrection' element= {<Paintcorrectionpage/>} />
+        </Routes>
+        <Footer />
 
       
       
