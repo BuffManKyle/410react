@@ -16,7 +16,6 @@ import Options from './pages/suplemental';
 import Packages from './pages/packages';
 import Single from './pages/single'
 import Paintcorrectionpage from './pages/paint-correction-group';
-import Soapbackground from './pages/assets/images/281455940_561511535492561_7192036834128795424_n.jpg'
 
 function App() {
   return (
