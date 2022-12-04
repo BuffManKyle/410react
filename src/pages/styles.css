@@ -3,7 +3,7 @@
 
 body{
     background-color: #f5f5f5;
-   
+    overflow-x: hidden;
 }
 
 p{
@@ -66,6 +66,7 @@ li{
     position: relative;
     z-index: 1;
     image-rendering: optimizeSpeed;
+    
 }
 
 

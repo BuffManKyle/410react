@@ -293,7 +293,7 @@ function Packages () {
                     </Card>
                 </div>
 
-                <Row className="cardChange p-3 cardContent">
+                <Row className="cardChange p-3 cardContent addonCP">
                         <h1 className="text-center display-5 ">Add-Ons</h1>
                         <Col>
                             <h3 className="text-center">Windshield/Glass</h3>
