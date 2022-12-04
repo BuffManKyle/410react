@@ -7,7 +7,7 @@ function Addons () {
     return (
         <>
             <Container fluid >
-                <Row >
+                <Row>
                     <Col lg={7} className="paddingZero">
                         <div class="jumbotron">
                             <h1 class="display-3 pagesTitle">Engine Bay Detailing</h1>
@@ -27,8 +27,8 @@ function Addons () {
                             </div>
                         </div>
                     </Col>
-                    <Col lg={5} className="addonBorder">
-                        <Row className="d-flex justify-content-evenly">
+                    <Col lg={5} className="imgBorderRight">
+                        <Row className="">
                             <img className="bayImg" src={Enginebay1} alt="" />
                         </Row>
                         
@@ -38,7 +38,7 @@ function Addons () {
                 </Row>
 
                 <Row className="pageContentCentered">
-                    <Col lg={{ span: 6, offset: 3 }} className="p-5 ">
+                    <Col sm={12} lg={{ span: 5, offset: 4}} className="p-5 ">
                         <h1 class="display-3 pagesTitleAlt">Undercarriage Detail</h1>
                         <div className="pagesTitleContentAlt">
                            <p>
@@ -53,14 +53,9 @@ function Addons () {
                                 Cost: $200 (smaller vehicles will be priced accordingly on a case by case basis) 
                             </p> 
                         </div>
-
-                        
                     </Col>
                 </Row>
 
-
-                    
-                
             </Container>
         </>
     )

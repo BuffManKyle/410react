@@ -16,6 +16,7 @@ import Options from './pages/suplemental';
 import Packages from './pages/packages';
 import Single from './pages/single'
 import Paintcorrectionpage from './pages/paint-correction-group';
+import Coatingoptions from './pages/coating-options';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path='/coatingpackages' element={<Packages/>} />
           <Route path='/one-stage' element={<Single/>} />
           <Route path='/paintcorrection' element= {<Paintcorrectionpage/>} />
+          <Route path='/undrdogcoating' element = {<Coatingoptions/>} />
         </Routes>
         <Footer />
 

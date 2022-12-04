@@ -1,3 +1,7 @@
+.fluidBackground{
+    background-color: #f5f5f5;
+}
+
 .jumbotron{
     background-color: #24292d;
     padding: 4rem 2rem;
@@ -27,6 +31,10 @@
     background-color: #fff;
 }
 
+.pageContentCentered li{
+    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
+}
+
 .pagesImgWrapper{
     padding: 4em;
     background-image:linear-gradient(180deg, #f5f5f5 0%, #d2dadc 15%, #c0cbcf 40%, #a6b7bd 70%, #94a9b0 88%, #88a0a8 100%);
@@ -37,25 +45,31 @@
     width: 100%;
     max-height: 85%;
     border-radius: 5%!important;
-    box-shadow: 7px 7px 5px ;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.9)!important;
     margin: 1em 0;
     object-fit: cover;
+}
+
+.aboutusSpacing{
+    padding-bottom: 4.5em;
+    background-color: #f5f5f5;
+}
+
+.suplementalSpacing{
+    padding: 4em 10em;
+    background-color: #f5f5f5;
+}
+
+.supplemental{
+    background-color: #24292d;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    padding: 4em 2em;
 }
 
 .showmorebtn{
     margin-bottom: 1em;
     background-color: #fff;
     color: #0073CF;
-}
-
-.pageBorder{
-    background-color: #fff;
-    border-style: solid;
-    border-color: #24292d;
-    border-right-width: 2em !important;
-    border-width: 0;
-    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
-    padding: 4rem 2rem;
 }
 
 .paddingZero{
@@ -66,22 +80,91 @@
     margin: 1em;
     padding: .2em;
 }
+
 .cardBackground{
     background-image:linear-gradient(180deg, #f5f5f5 0%, #d2dadc 15%, #c0cbcf 40%, #a6b7bd 70%, #94a9b0 88%, #88a0a8 100%);
+}
+
+.cardChange{
+    box-shadow: 0 2rem 1rem rgba(0,0,0,.175)!important;
+    background-color: #24292d;
+    color: #fff;
+    border-radius: 0.375rem;
+}
+
+.cardContent{
+    font-size: 1.2em;
+}
+
+.cardContent h3{
+    text-decoration-line: underline;
+}
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.cardMobile{
+    margin: 2em;
+}
+
+.cardUDImg{
+    max-width: 50%;
+}
+
+.cardCPImg{
+    max-width: 40%;
+    padding: 0;
+}
+
+.udpP{
+    padding-top: 2.4em;
+}
+
+.cPC{
+    margin: 3em 0;
 }
 
 .bayImg{
     width: 100%;
 }
 
-.addonBorder{
+.explainImg{
+    margin: auto;
+    max-width: 100%;
+    
+}
+
+.imgBorderRight{
     background-color: #fff;
     border-style: solid;
     border-color: #24292d;
     border-right-width: 2em !important;
     border-width: 0;
+    display: flex;
     padding: 0;
+    
 }
+
+.pageBorder{
+    background-color: #fff;
+    border-style: solid;
+    border-color: #24292d;
+    border-right-width: .4em !important;
+    border-width: 0;
+    font-size: clamp(1.2rem, 1.4rem, 1.5rem);
+    padding: 4rem 2rem;
+}
+
+.formAltBackground{
+    background-color: #24292d;
+    padding: 2em;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.9)!important;
+}
+
+
+
 
 .accordion{
     padding: 4em 4em 12em 4em;
@@ -93,12 +176,10 @@
 }
 
 
-li{
-    list-style-type: "-";
-}
+
 
 @media (max-width:480px) {
-    .pageBorder, .addonBorder{
+    .pageBorder, .imgBorderRight{
         border: none;
     }
     .bayImg{
@@ -107,4 +188,11 @@ li{
     .accordion{
         padding: 1em;
     }
+    .suplementalSpacing{
+        padding: 0;
+    }
+    .cPC{
+        margin: 2em 1em;
+    }
+    
 }

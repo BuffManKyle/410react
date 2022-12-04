@@ -68,6 +68,11 @@ function Header() {
                           Coating Packages
                         </NavDropdown.Item>
                       </LinkContainer>
+                      <LinkContainer to="/undrdogcoating">
+                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                          Protective Coating Options
+                        </NavDropdown.Item>
+                      </LinkContainer>
                       <LinkContainer to="/supplementalcoatings">
                         <NavDropdown.Item  onClick={toggleOffCanvas}>
                           Supplemental Coating Options

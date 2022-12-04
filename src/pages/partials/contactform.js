@@ -1,20 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import './form.css';
-import { Col, Container } from 'react-bootstrap';
+import { Button, Col, Container } from 'react-bootstrap';
 
 function Contactform () {
     return (
         <>
             <Container>
-                <form className="contactForm">
+                <form className="contactForm" autocomplete="off">
                     <Col>
                         <input name="name" type="text" placeholder="Name"></input>
                     </Col>
                     <Col>
-                        <input name="email" type="email" placeholder="Email"></input>
+                        <input name="email" type="email" placeholder="Email" required></input>
                     </Col>
                     <Col>
-                        <input name="phone" type="tel" placeholder="Phone Number"></input>
+                        <input name="phone" type="tel" placeholder="Phone Number" required></input>
                     </Col>
                     <Col>
                         <select id="service" name="service" >
@@ -26,11 +26,9 @@ function Contactform () {
                            </select>
                     </Col>
                     <Col>
-                        <textarea name="message" placeholder="Message"></textarea>
+                        <textarea name="message" placeholder="Give us more details"></textarea>
                     </Col>
-                    
-                    
-                    
+                    <Button className="scrollbtn" size="lg">Send</Button>
                 </form>
 
 
