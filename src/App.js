@@ -17,13 +17,13 @@ import Packages from './pages/packages';
 import Single from './pages/single'
 import Paintcorrectionpage from './pages/paint-correction-group';
 import Coatingoptions from './pages/coating-options';
-import ScrollToTop from "./helpers/ScrollToTop";
+
 
 function App() {
   return (
     <div  className="App">
         <Header />
-        <ScrollToTop />
+        
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/add-ons' element={<Addon/>} />
@@ -40,7 +40,6 @@ function App() {
           <Route path='/paintcorrection' element= {<Paintcorrectionpage/>} />
           <Route path='/undrdogcoating' element = {<Coatingoptions/>} />
         </Routes>
-        
         <Footer />
 
       
