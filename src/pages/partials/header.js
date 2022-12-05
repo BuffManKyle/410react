@@ -64,24 +64,24 @@ function Header() {
                     <Container className="text-center">
 
                       <LinkContainer to="/coatingpackages">
-                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                        <Nav.Link  onClick={toggleOffCanvas}>
                           Coating Packages
-                        </NavDropdown.Item>
+                        </Nav.Link>
                       </LinkContainer>
                       <LinkContainer to="/undrdogcoating">
-                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                        <Nav.Link  onClick={toggleOffCanvas}>
                           Protective Coating Options
-                        </NavDropdown.Item>
+                        </Nav.Link>
                       </LinkContainer>
                       <LinkContainer to="/supplementalcoatings">
-                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                        <Nav.Link  onClick={toggleOffCanvas}>
                           Supplemental Coating Options
-                        </NavDropdown.Item>
+                        </Nav.Link>
                       </LinkContainer>
                       <LinkContainer to="/what-is-a-protective-coating">
-                        <NavDropdown.Item  onClick={toggleOffCanvas}>
+                        <Nav.Link  onClick={toggleOffCanvas}>
                           Coatings Explained
-                        </NavDropdown.Item>
+                        </Nav.Link>
                       </LinkContainer>
                     </Container>
                   </NavDropdown>

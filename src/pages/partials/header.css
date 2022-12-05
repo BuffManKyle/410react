@@ -97,6 +97,10 @@
     color: #fff !important;
 }
 
+.nav-link.active{
+    text-decoration: underline;
+}
+
 .dropdown-item:hover, .dropdown-item.active{
     background: none;
     color: #fff;
