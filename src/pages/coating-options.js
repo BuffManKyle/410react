@@ -2,12 +2,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
 import "./styles/pages.css";
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import Undrdoglite from './assets/images/undrdog-lite.webp';
 import Undrdogpro from './assets/images/undrdog-pro.webp'
 
 
+
 function Coatingoptions () {
+
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []);
+      
+        return null;
+      }
 
     const [showMore, setShowMore] = useState(false);
 
@@ -17,6 +26,7 @@ function Coatingoptions () {
         <>
             
                 <div class="jumbotron">
+                <ScrollToTopOnMount />
                     <div class="container">
                     <h1 class="display-3 pagesTitle">Coating Options</h1>
                     <div className="pagesTitleContent">

@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
 import "./styles/pages.css";
 import { Container, Card, Row, CardGroup } from 'react-bootstrap';
+import { useEffect } from "react";
 import Opglass from './assets/images/op-glass.webp';
 import Opinterior from './assets/images/op-interior.webp';
 import Glassw from './assets/images/glass-windshield.webp';
@@ -13,9 +14,19 @@ import Iglleather from './assets/images/igl-leather.webp';
 import Iglfabric from './assets/images/igl-fabric.webp';
 
 function Options () {
+
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []);
+      
+        return null;
+      }
+
     return (
         <>
             <Container fluid className="suplementalSpacing">
+            <ScrollToTopOnMount />
                 <Row className="justify-content-center">
                     <Container className="supplemental">
                         <h1 className="display-3 pagesTitle">Supplemental Coating Options</h1>

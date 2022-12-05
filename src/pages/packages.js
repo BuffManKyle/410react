@@ -3,6 +3,7 @@ import "./styles.css"
 import "./styles/pages.css";
 import Contactform from "./partials/contactform";
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { useEffect } from "react";
 import Mustangsoap from './assets/images/281389973_561511532159228_5300915891771810873_n.jpg';
 import Porscheheadlight from './assets/images/317477836_683892203241326_3489825842956859716_n.jpg';
 import Mustangclassic from './assets/images/286075321_575273730783008_7454838259716607200_n.jpg';
@@ -10,10 +11,19 @@ import GMChood from './assets/images/313172293_659057639058116_67625236354661663
 
 function Packages () {
 
+    function ScrollToTopOnMount() {
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, []);
+      
+        return null;
+      }
+
     return (
         <>
             
             <Container fluid className="suplementalSpacing">
+            <ScrollToTopOnMount />
                 <div className="formAltBackground">
                     <h1 class="display-3 pagesTitle">Get a Price Quote</h1>
                     <Contactform/>
