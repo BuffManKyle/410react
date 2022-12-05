@@ -2,7 +2,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
 import "./styles/pages.css";
 import { Container, Card, Row, CardGroup } from 'react-bootstrap';
-import { useEffect } from "react";
 import Opglass from './assets/images/op-glass.webp';
 import Opinterior from './assets/images/op-interior.webp';
 import Glassw from './assets/images/glass-windshield.webp';
@@ -15,19 +14,11 @@ import Iglfabric from './assets/images/igl-fabric.webp';
 
 function Options () {
 
-    function ScrollToTopOnMount() {
-        useEffect(() => {
-          window.scrollTo(0, 0);
-        }, []);
-      
-        return null;
-      }
 
     return (
         <>
-            <Container fluid className="suplementalSpacing">
-            <ScrollToTopOnMount />
-                <Row className="justify-content-center">
+            <Container fluid className="suplementalSpacing ">
+                <Row className="justify-content-center horizontalMargin">
                     <Container className="supplemental">
                         <h1 className="display-3 pagesTitle">Supplemental Coating Options</h1>
                         <div className="pagesTitleContent">
@@ -39,7 +30,7 @@ function Options () {
                         </div>
                     </Container>
                 </Row>
-                <Row className="">
+                <Row className="horizontalMargin">
                     <CardGroup>
                         <Card className="cardChange" >
                             <Card.Img variant="top" src={Opglass} />
@@ -81,7 +72,7 @@ function Options () {
                     </CardGroup>
                 </Row>
 
-                <Row className="">
+                <Row className="horizontalMargin">
                     <CardGroup>
                         <Card className="cardChange" >
                             <Card.Img variant="top" src={Glassa} />
@@ -126,7 +117,7 @@ function Options () {
                     
                 </Row>
 
-                <Row className="justify-content-center">
+                <Row className="justify-content-center horizontalMargin">
                     <CardGroup>
                         <Card className="cardChange" >
                             <Card.Img variant="top" src={Iglhead} />

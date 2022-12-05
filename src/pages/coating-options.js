@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css"
 import "./styles/pages.css";
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import Undrdoglite from './assets/images/undrdog-lite.webp';
 import Undrdogpro from './assets/images/undrdog-pro.webp'
 
@@ -10,13 +10,7 @@ import Undrdogpro from './assets/images/undrdog-pro.webp'
 
 function Coatingoptions () {
 
-    function ScrollToTopOnMount() {
-        useEffect(() => {
-          window.scrollTo(0, 0);
-        }, []);
-      
-        return null;
-      }
+    
 
     const [showMore, setShowMore] = useState(false);
 
@@ -26,7 +20,6 @@ function Coatingoptions () {
         <>
             
                 <div class="jumbotron">
-                <ScrollToTopOnMount />
                     <div class="container">
                     <h1 class="display-3 pagesTitle">Coating Options</h1>
                     <div className="pagesTitleContent">
@@ -109,9 +102,9 @@ function Coatingoptions () {
                 </Container>
 
            
-                <Container fluid className="suplementalSpacing hide-on-desktop">
-                    <Row className="">
-                        <Col lg={6}>
+                <div className="fluidBackground hide-on-desktop">
+                    <Row className="horizontalMargin">
+                        <Col>
                             <Card className="cardChange cardMobile text-center" >
                                     <Card.Img className="" variant="top" src={Undrdoglite} />
                                     <Card.Body>
@@ -136,7 +129,7 @@ function Coatingoptions () {
                                     </Card.Body>
                             </Card>
                             </Col>
-                            <Col lg={6}>
+                            <Col>
                             <Card className="cardChange cardMobile text-center" >
                                     <Card.Img className="" variant="top" src={Undrdogpro} />
                                     <Card.Body>
@@ -162,7 +155,7 @@ function Coatingoptions () {
                             </Card>
                         </Col>
                     </Row>
-                </Container>
+                </div>
         </>
     )
 };

@@ -167,8 +167,10 @@
     box-shadow: 0 1rem 3rem rgba(0,0,0,.9)!important;
 }
 
-
-
+.horizontalMargin{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
 .accordion{
     padding: 4em 4em 12em 4em;
