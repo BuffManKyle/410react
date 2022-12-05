@@ -60,7 +60,7 @@ function Header() {
                     <Nav.Link onClick={toggleOffCanvas}>Home</Nav.Link>
                   </LinkContainer>
 
-                  <NavDropdown title="Protective Coatings" id="nav-dropdown">
+                  <NavDropdown title="Protective Coatings" >
                     <Container className="text-center">
 
                       <LinkContainer to="/coatingpackages">
