@@ -39,7 +39,7 @@ function Home () {
             <div className="text-center homeContact">
                 <Row>
                     <Col lg={{ span: 6, offset: 3 }}>
-                        <p>Words here</p>
+                        <p></p>
                     </Col>
                 </Row>
                 <Row>
