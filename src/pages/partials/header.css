@@ -31,8 +31,6 @@
 }
 
 .navbar{
-    max-width: 100%;
-    position: sticky;
 }
 
 
@@ -66,7 +64,13 @@
 .brandNavLogo{
     width: 24.977rem;
     height: 12.875rem;
+    transition: all 0.3s ease;
 }
+
+.scrolled .brandNavLogo {
+    width: 16rem; /* Decreased width */
+    height: 8rem; /* Decreased height */
+  }
 
 .brandLogoInside{
     display: flex;

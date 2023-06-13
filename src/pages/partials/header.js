@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {LinkContainer} from 'react-router-bootstrap'
 import { Container, Nav, Navbar, Offcanvas, Col, Row, NavDropdown} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,25 +11,36 @@ import Brandimg from './images/transparent_watermark_smaller.png';
 
 
 function Header() {
+  const [show, setShow] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-    const [show, setShow] = useState(false);
-
-    const toggleOffCanvas = () => {
+  const toggleOffCanvas = () => {
     setShow((show) => !show);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     };
 
+    window.addEventListener('scroll', handleScroll);
 
-    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-
-
-    return (
+  return (
       <>
           
         {[false].map((expand) => (
-          <Navbar key={expand} expand={expand} className="" sticky="top">
-            <Container>
-                <button className="navbars-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faBars} /></button>
+          <Navbar key={expand} expand={expand} className={scrolled ? 'scrolled' : ''} sticky="top" >
+            <Container className="">
+                <button className="navbars-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faBars}  /></button>
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -41,7 +52,7 @@ function Header() {
                 
               >
                 
-                <Offcanvas.Header className="Navbar-Offcanvas-Blur lineup-nav">
+                <Offcanvas.Header className="Navbar-Offcanvas-Blur lineup-nav" >
                     <Container className="p-3">
                       <Row>
                         <Col>
