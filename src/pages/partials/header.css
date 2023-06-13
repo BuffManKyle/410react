@@ -63,20 +63,20 @@
 }
 
 .brandNavLogo{
-    width: 24.977rem;
-    height: 12.875rem;
+    width: 20rem;
+    height: 10rem;
     transition: all 0.3s ease;
 }
 
 .scrolled .brandNavLogo {
-    width: 13rem; /* Decreased width */
-    height: 7rem; /* Decreased height */
+    width: 10rem; /* Decreased width */
+    height: 5rem; /* Decreased height */
     /*visibility: hidden;*/
   }
 
 .brandNavLogoInside{
-    width: 24.977rem;
-    height: 12.875rem;
+    width: 18rem;
+    height: 10rem;
 }
 
 .brandLogoInside{
@@ -136,12 +136,12 @@
         margin: 0;
     }
     .brandNavLogo{
-        width: 20rem;
-        height: 9.8rem;
+        width: 15rem;
+        height: 7.5rem;
     }
     .scrolled .brandNavLogo{
-        width: 12rem;
-        height: 6rem;
+        width: 10rem;
+        height: 5rem;
         /*visibility: hidden;*/
     }
     .navOptions{
