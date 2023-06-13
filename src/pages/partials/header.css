@@ -68,8 +68,9 @@
 }
 
 .scrolled .brandNavLogo {
-    width: 16rem; /* Decreased width */
-    height: 8rem; /* Decreased height */
+    width: 13rem; /* Decreased width */
+    height: 7rem; /* Decreased height */
+    visibility: hidden;
   }
 
 .brandLogoInside{
@@ -135,6 +136,7 @@
     .scrolled .brandNavLogo{
         width: 12rem;
         height: 6rem;
+        visibility: hidden;
     }
     .navOptions{
         font-size: 1.5rem;
