@@ -59,7 +59,7 @@ function Header() {
                         <button className="navx-icon" onClick={toggleOffCanvas}><FontAwesomeIcon icon={faXmark} /></button>
                         </Col>
                         <Col md={12} className="brandLogoInside">
-                        <a  href="/"><img className="brandNavLogo" src={Brandimg} alt="logo"/></a>
+                        <a  href="/"><img className="brandNavLogoInside" src={Brandimg} alt="logo"/></a>
                         </Col>
                       </Row>
                       </Container>
