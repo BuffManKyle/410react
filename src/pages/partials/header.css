@@ -132,6 +132,10 @@
         width: 20rem;
         height: 9.8rem;
     }
+    .scrolled .brandNavLogo{
+        width: 12rem;
+        height: 6rem;
+    }
     .navOptions{
         font-size: 1.5rem;
     }
